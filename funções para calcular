@@ -1,0 +1,16 @@
+def acuracia(VP, VN, FP, FN):
+    return (VP + VN) / (VP + VN + FP + FN)
+
+def sensibilidade(VP, FN):
+    return VP / (VP + FN)
+
+def especificidade(VN, FP):
+    return VN / (VN + FP)
+
+def precisao(VP, FP):
+    return VP / (VP + FP)
+
+def f_score(VP, FN, FP):
+    sens = sensibilidade(VP, FN)
+    prec = precisao(VP, FP)
+    return (2 * prec * sens) / (prec + sens)
