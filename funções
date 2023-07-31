@@ -1,0 +1,16 @@
+VP = 90
+VN = 60
+FP = 10
+FN = 20
+
+acc = acuracia(VP, VN, FP, FN)
+sens = sensibilidade(VP, FN)
+espec = especificidade(VN, FP)
+prec = precisao(VP, FP)
+f_score = f_score(VP, FN, FP)
+
+print("Acurácia:", acc)
+print("Sensibilidade:", sens)
+print("Especificidade:", espec)
+print("Precisão:", prec)
+print("F-Score:", f_score)
